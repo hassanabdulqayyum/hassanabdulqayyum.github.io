@@ -47,7 +47,7 @@
 
     w.onmessage = function(e) {
       console.log(e.data);
-      newImageData = e.data;
+      result.newImageData = e.data;
       }
     console.log(newImageData);
 
