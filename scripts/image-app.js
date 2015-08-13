@@ -43,7 +43,7 @@
     // Hint! This is where you should post messages to the web worker and
     // receive messages from the web worker.
     var w = new Worker('scripts/worker.js');
-    first.onchange = function() {
+    onchange = function() {
       myWorker.postMessage(imageData);
       console.log("posted message");
     }
