@@ -45,7 +45,7 @@
     var w = new Worker("scripts/worker.js");
     w.postMessage(list);
 
-    aResult = function(e) {
+    aResult = w.onmessage(e) {
       return e.data;
       }
     console.log(aResult);
