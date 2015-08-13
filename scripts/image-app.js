@@ -41,6 +41,9 @@
     toggleButtonsAbledness();
 
     var myWorker = new Worker("scripts/worker.js");
+    onchange = function() {
+      myWorker.postMessage(imageData);
+    }
 
     length = imageData.data.length / 4;
     for (i = j = 0, ref = length; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
