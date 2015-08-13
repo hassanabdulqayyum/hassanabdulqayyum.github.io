@@ -1,7 +1,7 @@
 importScripts('imageManips.js');
 
 this.onmessage = function(e) {
-  console.log(e.imageData);
+  console.log(e);
   console.log(e.type);
   var imageData = e.data.imageData;
   var type = e.data.type;
