@@ -40,7 +40,7 @@
 
     toggleButtonsAbledness();
 
-    var myWorker = new Worker("worker.js");
+    var myWorker = new Worker("scipts/worker.js");
 
     length = imageData.data.length / 4;
     for (i = j = 0, ref = length; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
