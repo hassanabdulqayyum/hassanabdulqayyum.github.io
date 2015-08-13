@@ -45,7 +45,11 @@
     // receive messages from the web worker.
     var w = new Worker("scripts/worker.js");
     w.postMessage(list);
-    
+
+    w.onmessage = function(e) {
+      i_result = e;
+      console.log(e);
+    }
 
     toggleButtonsAbledness();
     return ctx.putImageData(imageData, 0, 0);
