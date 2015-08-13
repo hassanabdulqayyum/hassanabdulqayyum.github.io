@@ -45,10 +45,10 @@
     var w = new Worker("scripts/worker.js");
     w.postMessage(list);
 
-    aResult = w.onmessage(e) {
+    w.onmessage = function(e) {
       return e.data;
       }
-    console.log(aResult);
+    imageData = w.onmessage(e);
     
 
     toggleButtonsAbledness();
