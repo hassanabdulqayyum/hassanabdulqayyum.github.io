@@ -46,9 +46,12 @@
     var w = new Worker("scripts/worker.js");
     w.postMessage(list);
 
+    var i_result;
     w.onmessage = function(e) {
-      imageData = e;
+      i_result = e;
+      console.log(e.data);
     }
+    imageData = i_result;
 
     toggleButtonsAbledness();
     return ctx.putImageData(imageData, 0, 0);
