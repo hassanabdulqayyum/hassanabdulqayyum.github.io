@@ -45,9 +45,10 @@
     var w = new Worker("scripts/worker.js");
     w.postMessage(list);
 
-    w.onmessage = function(e) {
+    aResult = function(e) {
       return e.data;
       }
+    console.log(aResult);
     
 
     toggleButtonsAbledness();
