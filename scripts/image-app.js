@@ -48,7 +48,7 @@
 
     w.onmessage = function(e) {
       i_result = e;
-      console.log(e);
+      console.log(e.data);
     }
 
     toggleButtonsAbledness();
