@@ -4,7 +4,7 @@ this.onmessage = function(e) {
   console.log(e.data.t);
   console.log(e.data.data);
   var imageData = e.data.data;
-  var type = e.type;
+  var type = e.data.t;
 
   try {
     length = imageData.data.length / 4;
