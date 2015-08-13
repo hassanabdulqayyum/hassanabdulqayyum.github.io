@@ -44,7 +44,7 @@
     // receive messages from the web worker.
     var w = new Worker('scripts/worker.js');
     onchange = function() {
-      myWorker.postMessage(imageData);
+      w.postMessage(imageData);
       console.log("posted message");
     }
     onchange();
