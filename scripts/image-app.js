@@ -45,10 +45,10 @@
     var w = new Worker("scripts/worker.js");
     w.postMessage(list);
 
-    w.onmessage = function(e) {
-      iResult = e.data;
-      }
-    console.log(iResult);
+    //w.onmessage = function(e) {
+      //iResult = e.data;
+      //}
+    console.log(w.onmessage());
 
     toggleButtonsAbledness();
     return ctx.putImageData(imageData, 0, 0);
