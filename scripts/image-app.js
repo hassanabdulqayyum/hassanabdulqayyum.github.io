@@ -47,8 +47,7 @@
     w.postMessage(list);
 
     w.onmessage = function(e) {
-      i_result = e;
-      console.log(e.data);
+      imageData = e;
     }
 
     toggleButtonsAbledness();
