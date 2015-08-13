@@ -39,7 +39,7 @@
     imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
     toggleButtonsAbledness();
-    var list = {'list':type, 'data': imageData};
+    var list = {'t':type, 'data': imageData};
 
     // Hint! This is where you should post messages to the web worker and
     // receive messages from the web worker.
