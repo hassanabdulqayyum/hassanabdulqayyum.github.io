@@ -43,15 +43,7 @@
     // Hint! This is where you should post messages to the web worker and
     // receive messages from the web worker.
     var w = new Worker('scripts/worker.js');
-    onchange = function() {
-      w.postMessage(imageData);
-      console.log("posted message");
-    }
-    onchange();
-    w.onmessage = function(e) {
-      mresult = e;
-      console.log("message received");
-    }
+    postMessage();
 
 
     length = imageData.data.length / 4;
