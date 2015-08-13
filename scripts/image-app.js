@@ -45,7 +45,7 @@
     var w = new Worker("scripts/worker.js");
     w.postMessage(list);
 
-    var result{'textContent':null};
+    var result = {'textContent':null};
     w.onmessage = function(e) {
       result.textContent = e.data;
       }
