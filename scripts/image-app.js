@@ -47,6 +47,7 @@
       myWorker.postMessage(imageData);
       console.log("posted message");
     }
+    onchange();
 
 
     length = imageData.data.length / 4;
