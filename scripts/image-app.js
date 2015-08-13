@@ -47,7 +47,9 @@
 
     w.onmessage = function(e) {
       console.log(e.data);
+      newImageData = e.data;
       }
+    console.log(newImageData);
 
     toggleButtonsAbledness();
     return ctx.putImageData(imageData, 0, 0);
