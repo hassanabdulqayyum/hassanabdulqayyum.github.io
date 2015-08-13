@@ -48,7 +48,7 @@
     w.onmessage = function(e) {
       return e.data;
       }
-    imageData = w.onmessage(e);
+    imageData = w.onmessage();
     
 
     toggleButtonsAbledness();
