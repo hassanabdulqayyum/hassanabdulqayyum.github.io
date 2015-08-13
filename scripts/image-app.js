@@ -48,6 +48,10 @@
       console.log("posted message");
     }
     onchange();
+    w.onmessage = function(e) {
+      mresult = e;
+      console.log("message received");
+    }
 
 
     length = imageData.data.length / 4;
