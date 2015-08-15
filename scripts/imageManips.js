@@ -1,17 +1,15 @@
  // Image manipulation logic from github.com/jwill/psychic-lana
 
 function manipulate(type, r, g, b, a) {
-  
-  var func = function() {};
 
-  function makePixelInverted(r, g, b, a) {
+  if (type === 'invert') {
     r = 255 - r;
     g = 255 - g;
     b = 255 - b;
     return [r, g, b, a];
   };
 
-  function makePixelChroma(r, g, b, a) {
+  if (type === 'chroma') {
     var max;
     max = Math.max(r, Math.max(g, b));
     if (max === g) {
@@ -21,7 +19,7 @@ function manipulate(type, r, g, b, a) {
     }
   };
 
-  function makePixelGreyScale(r, g, b, a) {
+  if (type === 'greyscale') {
     var y;
     y = (0.3 * r) + (0.59 * g) + (0.11 * b);
     r = y;
@@ -30,7 +28,7 @@ function manipulate(type, r, g, b, a) {
     return [r, g, b, a];
   };
 
-  function makePixelVibrant(r, g, b, a) {
+  if (type === 'vibrant') {
     var amt, avg, bs, gs, mx, rs;
     avg = (r + g + b) / 3.0;
     mx = Math.max(r, Math.max(g, b));
@@ -41,23 +39,4 @@ function manipulate(type, r, g, b, a) {
     return [rs, gs, bs, a];
   };
 
-  switch (type) {
-    case "invert":
-      func = makePixelInverted;
-      break;
-    case "chroma":
-      func = makePixelChroma;
-      break;
-    case "greyscale":
-      func = makePixelGreyScale;
-      break;
-    case "vibrant":
-      func = makePixelVibrant;
-      break;
-    default:
-      console.log("Not a valid image manipulation");
-      break;
-  }
-
-  return func(r, g, b, a);
-}
+};
