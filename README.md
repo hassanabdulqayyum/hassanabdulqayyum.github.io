@@ -1,8 +1,21 @@
-# Web Workers Demo
-Migrate Long Running JS onto a Web Worker
+# Udacity 60fps Course Samples
 
-### [Relevant Quiz from Browser Rendering Optimization](https://www.udacity.com/course/viewer#!/c-ud860/l-4138168623/e-4184098558/m-4150829139)
+**Please note: this code is intended for you to hone your debugging skills. It contains a lot of code that you should not use in production!**
 
-### [Relevant solution from Browser Rendering Optimization](https://www.udacity.com/course/viewer#!/c-ud860/l-4138168623/e-4184098558/m-4146278980)
+This is a simple web app that shows the top stories from [Hacker News](https://news.ycombinator.com/news) via [its API](http://blog.ycombinator.com/hacker-news-api).
 
-Working on the quiz? Start by examining index.html and the JavaScript files linked inside it.
+Unfortunately it has a bunch of performance issues, such as:
+
+* Layout Thrashing
+* Expensive painting
+* Unnecessary layouts
+* Long-running and badly-timed JavaScript
+* Bad touch handling
+
+Your mission is to find and fix the issues, and make the app gloriously performant!
+
+## License
+
+See /LICENSE for more.
+
+This is not a Google product.
