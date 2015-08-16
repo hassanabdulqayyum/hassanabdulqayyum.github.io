@@ -258,7 +258,7 @@ APP.Main = (function() {
 
     // It does seem awfully broad to change all the
     // colors every time!
-    for (var s = 0; s < storyElements.length; s++) {
+    for (var s = 0; s < 6; s++) {
 
       var story = storyElements[s];
       var score = story.querySelector('.story__score');
