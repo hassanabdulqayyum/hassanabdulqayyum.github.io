@@ -256,7 +256,6 @@ APP.Main = (function() {
 
     console.log("useless");
     }
-  }
 
   main.addEventListener('touchstart', function(evt) {
 
