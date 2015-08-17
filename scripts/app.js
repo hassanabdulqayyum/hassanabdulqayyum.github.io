@@ -132,6 +132,7 @@ APP.Main = (function() {
       closeButton.addEventListener('click', hideStory.bind(this, details.id));
 
       var headerHeight = storyHeader.getBoundingClientRect().height;
+      console.log(headerHeight);
       storyContent.style.paddingTop = headerHeight + 'px';
 
       if (typeof kids === 'undefined')
@@ -266,33 +267,6 @@ APP.Main = (function() {
         score.style.backgroundColor = 'hsl(42, ' + saturation + '%, 50%)';
       }
     }
-
-
-    // It does seem awfully broad to change all the
-    // colors every time!
-    // for (var s = 0; s < storyElements.length; s++) {
-
-    //   var story = storyElements[s];
-    //   var score = story.querySelector('.story__score');
-    //   var title = story.querySelector('.story__title');
-
-    //   // Base the scale on the y position of the score.
-    //   var scoreLocation = score.getBoundingClientRect().top -
-    //       document.body.getBoundingClientRect().top;
-    //   var scale = Math.min(1, 1 - (0.05 * ((scoreLocation - 170) / 381)));
-    //   var opacity = Math.min(1, 1 - (0.5 * ((scoreLocation - 170) / 381)));
-
-    //   score.style.width = (scale * 40) + 'px';
-    //   score.style.height = (scale * 40) + 'px';
-    //   score.style.lineHeight = (scale * 40) + 'px';
-
-    //   // Now figure out how wide it is and use that to saturate it.
-    //   scoreLocation = score.getBoundingClientRect();
-    //   var saturation = (100 * ((scoreLocation.width - 38) / 2));
-
-    //   score.style.backgroundColor = 'hsl(42, ' + saturation + '%, 50%)';
-    //   title.style.opacity = opacity;
-    //}
   }
 
   main.addEventListener('touchstart', function(evt) {
