@@ -1,21 +1,5 @@
-# Udacity 60fps Course Samples
+##Who doesn't like delicious pizza?
 
-**Please note: this code is intended for you to hone your debugging skills. It contains a lot of code that you should not use in production!**
+This site supports [this quiz](https://www.udacity.com/course/viewer#!/c-ud860/l-4147498575/e-4154208580/m-4142388616) from Udacity's [Browser Rendering Optimization](http://udacity.com/ud860)
 
-This is a simple web app that shows the top stories from [Hacker News](https://news.ycombinator.com/news) via [its API](http://blog.ycombinator.com/hacker-news-api).
-
-Unfortunately it has a bunch of performance issues, such as:
-
-* Layout Thrashing
-* Expensive painting
-* Unnecessary layouts
-* Long-running and badly-timed JavaScript
-* Bad touch handling
-
-Your mission is to find and fix the issues, and make the app gloriously performant!
-
-## License
-
-See /LICENSE for more.
-
-This is not a Google product.
+This pizzeria site is a performance nightmare. Record a timeline trace and watch the Forced Synchronous Layout warnings pop up. Can you make this site run at 60fps?
