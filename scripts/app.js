@@ -189,7 +189,7 @@ APP.Main = (function() {
 
       // Now figure out where it needs to go.
       left += (0 - storyDetailsPosition.left) * 0.1;
-
+      storyDetailsPosition.left = left;
       // Set up the next bit of the animation if there is more to do.
       if (Math.abs(left) > 0.5)
         setTimeout(animate, 4);
