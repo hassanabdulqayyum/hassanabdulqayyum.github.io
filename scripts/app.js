@@ -173,11 +173,11 @@ APP.Main = (function() {
 
     if (!storyDetails)
       return;
-
+    var storyDetailsPosition = storyDetails.getBoundingClientRect();
     document.body.classList.add('details-active');
     storyDetails.style.opacity = 1;
 
-    var storyDetailsPosition = storyDetails.getBoundingClientRect();
+    
     function animate () {
 
       // Find out where it currently is.
