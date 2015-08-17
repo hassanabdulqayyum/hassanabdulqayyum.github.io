@@ -160,7 +160,7 @@ APP.Main = (function() {
     }
 
   }
-  var storyDetailsPosition = storyDetails.getBoundingClientRect();
+
   function showStory(id) {
 
     if (inDetails)
@@ -177,7 +177,7 @@ APP.Main = (function() {
     document.body.classList.add('details-active');
     storyDetails.style.opacity = 1;
 
-    
+    var storyDetailsPosition = storyDetails.getBoundingClientRect();
     function animate () {
 
       // Find out where it currently is.
@@ -223,7 +223,7 @@ APP.Main = (function() {
 
       // Find out where it currently is.
       var mainPosition = main.getBoundingClientRect();
-      
+      var storyDetailsPosition = storyDetails.getBoundingClientRect();
       var target = mainPosition.width + 100;
 
       // Now figure out where it needs to go.
