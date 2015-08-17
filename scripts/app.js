@@ -181,6 +181,7 @@ APP.Main = (function() {
 
       // Find out where it currently is.
       var storyDetailsPosition = storyDetails.getBoundingClientRect();
+      console.log(storyDetailsPosition);
 
       // Set the left value if we don't have one already.
       if (left === null)
