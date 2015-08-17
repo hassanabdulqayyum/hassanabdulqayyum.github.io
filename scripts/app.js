@@ -177,12 +177,10 @@ APP.Main = (function() {
     document.body.classList.add('details-active');
     storyDetails.style.opacity = 1;
 
-    var storyDetailsPosition = storyDetails.getBoundingClientRect();
     function animate () {
 
       // Find out where it currently is.
-      
-
+      var storyDetailsPosition = storyDetails.getBoundingClientRect();
       // Set the left value if we don't have one already.
       if (left === null)
         left = storyDetailsPosition.left;
