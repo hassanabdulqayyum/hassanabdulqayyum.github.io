@@ -66,6 +66,7 @@ APP.Main = (function() {
     // This seems odd. Surely we could just select the story
     // directly rather than looping through all of them.
     var storyElements = document.querySelectorAll('.story');
+    console.log(document.querySelector('.story.id'));
 
     for (var i = 0; i < storyElements.length; i++) {
 
