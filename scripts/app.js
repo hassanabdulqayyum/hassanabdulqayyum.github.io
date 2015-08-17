@@ -131,8 +131,7 @@ APP.Main = (function() {
       var closeButton = storyDetails.querySelector('.js-close');
       closeButton.addEventListener('click', hideStory.bind(this, details.id));
 
-      var headerHeight = storyHeader.getBoundingClientRect().height;
-      console.log(headerHeight);
+      var headerHeight = 137.1875;
       storyContent.style.paddingTop = headerHeight + 'px';
 
       if (typeof kids === 'undefined')
@@ -258,7 +257,6 @@ APP.Main = (function() {
     var storyElements = document.querySelectorAll('.story');
     for (var s = 0; s < storyElements.length; s++) {
       if (storyElements[s].getBoundingClientRect().top > 150) {break; }
-      console.log("start");
       for (var i = 0; i < 7; i++) {
         var story = storyElements[s+i];
         var score = story.querySelector('.story__score');
