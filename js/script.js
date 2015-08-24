@@ -18,7 +18,7 @@ function loadData() {
     imgurl = "https://maps.googleapis.com/maps/api/streetview?size=600x400&location= "+value;
     $('.bgimg').attr('src', imgurl);
     // YOUR CODE GOES HERE!
-    searchURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q="+value+"&sort=oldest&api-key=58fa5aaeb6a69ba3ca9c96c2ee873bba:14:72763448";
+    searchURL = "http://api.nytimes.com/svc/search/v2/articlesearch.jsonp?q="+value+"&sort=oldest&api-key=58fa5aaeb6a69ba3ca9c96c2ee873bba:14:72763448X&response-format=.jsonp&callback=svc_search_v2_articlesearch'";
     $.getJSON(searchURL, function(data) {
         console.log(data);
     });
